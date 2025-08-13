@@ -29,7 +29,7 @@
         }
         
         header {
-            background-color: var(--primary-color);
+            background-color: var(--light-color);
             color: white;
             padding: 1rem 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -73,7 +73,7 @@
         }
         
         .nav-links a {
-            color: white;
+            color: green;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
@@ -268,6 +268,67 @@
                 font-size: 1rem;
             }
         }
+
+        /* Estilos para la nueva sección de contacto */
+        .social-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .social-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .social-card i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .social-card:hover i {
+            color: white;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 1rem;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        .contact-info i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            width: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -275,12 +336,11 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <i class="fas fa-seedling"></i>
-                    <span>Red Semilla</span>
+                    <img width="180" height="60" src="Logo_Red_Semilla_fondo_transparente.png" frameborder="0"></img>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                    <li><a href="quienes_somos.html">¿Quiénes Somos?</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#principios">Principios</a></li>
                     <li><a href="#multimedia">Multimedia</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -302,34 +362,34 @@
             <h2 class="section-title">Nuestros Principios</h2>
             <div class="principles">
                 <div class="principle-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Respeto por la vida</h3>
+                    <p>Cuidar y valorar a todos los seres vivos, humanos y no humanos.</p>
+                </div>
+                <div class="principle-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Ecologismo</h3>
+                    <p>Promover prácticas sostenibles y responsables con el medio ambiente.</p>
+                </div>
+                <div class="principle-card">
                     <i class="fas fa-handshake"></i>
-                    <h3>Cooperación</h3>
-                    <p>Trabajamos juntos para alcanzar objetivos comunes, compartiendo recursos y conocimientos para el beneficio mutuo de todos los miembros de la red.</p>
+                    <h3>Integridad</h3>
+                    <p>Actuar con coherencia entre lo que decimos y lo que hacemos.</p>
                 </div>
                 <div class="principle-card">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Equidad</h3>
-                    <p>Promovemos relaciones justas y equilibradas donde todos los participantes reciben un trato igualitario y beneficios proporcionales.</p>
-                </div>
-                <div class="principle-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Sostenibilidad</h3>
-                    <p>Nuestras acciones están orientadas al cuidado del medio ambiente y al uso responsable de los recursos para las generaciones futuras.</p>
+                    <i class="fas fa-search"></i>
+                    <h3>Transparencia</h3>
+                    <p>Ser claros, honestos y abiertos en nuestras acciones y comunicaciones.</p>
                 </div>
                 <div class="principle-card">
                     <i class="fas fa-users"></i>
-                    <h3>Comunidad</h3>
-                    <p>Fortalecer el tejido social es fundamental para crear redes de apoyo y resiliencia ante los desafíos que enfrentamos como sociedad.</p>
+                    <h3>Colaboración comunitaria</h3>
+                    <p>Trabajar unidos con vecinos, organizaciones y comercios locales.</p>
                 </div>
                 <div class="principle-card">
-                    <i class="fas fa-book"></i>
-                    <h3>Educación</h3>
-                    <p>Compartir conocimientos y experiencias es la base para el crecimiento individual y colectivo dentro de nuestra red.</p>
-                </div>
-                <div class="principle-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Solidaridad</h3>
-                    <p>Actuamos con empatía y apoyo mutuo, especialmente con los miembros más vulnerables de nuestra comunidad.</p>
+                    <i class="fas fa-globe"></i>
+                    <h3>Acción local, impacto global</h3>
+                    <p>Creer que el cambio empieza en lo pequeño para transformar lo grande.</p>
                 </div>
             </div>
         </div>
@@ -337,7 +397,7 @@
 
     <section id="multimedia">
         <div class="container">
-            <h2 class="section-title">Contenido Audiovisual</h2>
+            <h2 class="section-title">Contenido Audiovisual</h2> <!--Subir videos de contenidos de redes sociales, como reels de tik tok o videos de youtube-->
             <div class="media-container">
                 <div class="media-item">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ejemplo1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -365,41 +425,48 @@
     </section>
 
     <section id="contacto">
-        <div class="container">
-            <h2 class="section-title">Únete a nuestra red</h2>
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">¿Cómo te gustaría participar?</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
+    <div class="container">
+        <h2 class="section-title">Contáctate con Nosotros</h2>
+        <div class="social-container">
+            <div class="social-grid">
+                <!--<a href="https://facebook.com/tupagina" target="_blank" class="social-card">
+                    <i class="fab fa-facebook-f"></i>
+                    <h3>Facebook</h3>
+                    <p>@RedSemillaOficial</p>
+                </a>
+                <a href="https://instagram.com/tupagina" target="_blank" class="social-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@RedSemilla_Ok</p>
+                </a>
+                <a href="https://youtube.com/tucanal" target="_blank" class="social-card">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Red Semilla TV</p>
+                </a>-->
+                <a href="mailto:redsemillalapaz@gmail.co" class="social-card">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> redsemillalapaz@gmail.co</p>
+                </a>
             </div>
+            <!--<div class="contact-info"> Colocar información de ubicación y número en esta sección
+                <p><i href="mailto:redsemillalapaz@gmail.co" class="fas fa-envelope"></i> <strong>Email:</strong> redsemillalapaz@gmail.com</p>
+            </div>-->
         </div>
+    </div>
     </section>
+
 
     <footer>
         <div class="container">
             <ul class="social-links">
                 <li><a href="https://www.facebook.com/profile.php?id=61578633133970"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
                 <li><a href="https://www.instagram.com/red_semilla_la_paz/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.youtube.com/@RedSemillaLaPaz"><i class="fab fa-youtube"></i></a></li>
             </ul>
-            <p class="copyright">© 2023 Red Semilla. Todos los derechos reservados.</p>
-            <p class="copyright">redsemillalapaz@gmail.com</p>
+            <p class="copyright">© 2025 Red Semilla. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
-
 </html>
-
